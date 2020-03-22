@@ -8,11 +8,11 @@ public class Adressenliste {
 
 	public Adressenliste() {
 		for (int i = 0; i < strasseA.length; i++) {
-			for (int j = 0; j < hnrA.length; i++) {
+			for (int j = 0; j < hnrA.length; j++) {
 				adressenAA[i][j] = new Adresse(strasseA[i], hnrA[j]);
 				System.out.println(adressenAA[i][j]);
 
 			}
 		}
-	}
+	}	
 }
