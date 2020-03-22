@@ -67,12 +67,17 @@ public class Auto {
 	}
 
 	public String toString() {
-		if (getKennzeichen() == null || getBesitzer() == null) {
-			return "Auto ist nicht zugelassen";
+		String retString = "Kilometerstand:"+this.getKilometerstand()+"\n"+
+				"Verbrauch:"+this.getVerbrauch()+" / 100km\n";
+		
+		if(this.getBesitzer() == null || this.getKennzeichen() == null) {
+			retString += "Achtung, Auto ist nicht zugelassen.";
+		} else {
+			retString += "Kennzeichen: "+this.getKennzeichen()+"\n"
+					+"Besitzer: "+this.getBesitzer();
 		}
-		return "Kilometerstand: " + getKilometerstand() + '\n' + "Verbrauch: " + getVerbrauch() + " / 100km\n"
-				+ "Kennzeichen: " + getKennzeichen() + "\n" + "Besitzer: " + besitzer.getVorname() + " "
-				+ besitzer.getNachname();
+		return retString;
 	}
+
 
 }
