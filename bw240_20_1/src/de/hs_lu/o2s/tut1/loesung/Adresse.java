@@ -9,6 +9,9 @@ public class Adresse {
 		this.hnr = hnr;
 	}
 	
+	public String toString() {
+		return strasse+' '+hnr;
+	}
 	
 	
 

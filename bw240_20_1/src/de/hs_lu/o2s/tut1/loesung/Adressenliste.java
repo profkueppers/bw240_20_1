@@ -14,5 +14,33 @@ public class Adressenliste {
 
 			}
 		}
+	}
+
+	public String[] getStrasseA() {
+		return strasseA;
+	}
+
+	public void setStrasseA(String[] strasseA) {
+		this.strasseA = strasseA;
+	}
+
+	public String[] getHnrA() {
+		return hnrA;
+	}
+
+	public void setHnrA(String[] hnrA) {
+		this.hnrA = hnrA;
+	}
+
+	public Adresse[][] getAdressenAA() {
+		return adressenAA;
+	}
+
+	public void setAdressenAA(Adresse[][] adressenAA) {
+		this.adressenAA = adressenAA;
 	}	
+	
+	
+	
+	
 }
