@@ -1,46 +1,35 @@
 package de.hs_lu.o2s.tut1.loesung;
 
 public class Adressenliste {
+	String[] strasseA = { "Aachener Straße", "Berliner Straße", "Chemnitzer Straße" };
+	String[] hnrA = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 
-	private String[] strasseA = { "Aachener Straße", "Berliner Straße", "Chemnitzer Straße" };
-	private String[] hnrA = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };;
-	private Adresse[][] adressenAA = new Adresse[strasseA.length][hnrA.length];
+	Adresse[][] adressenAA = new Adresse[strasseA.length][hnrA.length];
+
+	// StrasseA
+//		INDEX		Länge
+//		[0][1][2] ==> 3!
 
 	public Adressenliste() {
-		for (int i = 0; i < strasseA.length; i++) {
-			for (int j = 0; j < hnrA.length; j++) {
-				adressenAA[i][j] = new Adresse(strasseA[i], hnrA[j]);
-				System.out.println(adressenAA[i][j]);
+		for (int currentStreet = 0; currentStreet < strasseA.length; currentStreet++) {
+			for (int currentHouseNumber = 0; currentHouseNumber < hnrA.length; currentHouseNumber++) {
+
+				adressenAA[currentStreet][currentHouseNumber] = new Adresse(strasseA[currentStreet],
+						hnrA[currentHouseNumber]);
+
+				System.out.println(adressenAA[currentStreet][currentHouseNumber]);
+
+				// adressenAA[0][0] ==> Adressenobjekt ("Aachener Straße", "1")
 
 			}
 		}
+
 	}
 
-	public String[] getStrasseA() {
-		return strasseA;
+	public static void main(String[] args) {
+
+		Adressenliste a1 = new Adressenliste();
+
 	}
 
-	public void setStrasseA(String[] strasseA) {
-		this.strasseA = strasseA;
-	}
-
-	public String[] getHnrA() {
-		return hnrA;
-	}
-
-	public void setHnrA(String[] hnrA) {
-		this.hnrA = hnrA;
-	}
-
-	public Adresse[][] getAdressenAA() {
-		return adressenAA;
-	}
-
-	public void setAdressenAA(Adresse[][] adressenAA) {
-		this.adressenAA = adressenAA;
-	}	
-	
-	
-	
-	
 }
