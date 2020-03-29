@@ -6,8 +6,6 @@ public class exkurs {
 		
 	}
 	
-	public double addieren(double zahl1, double zahl2) {
-		return zahl1+zahl2;
 		
 	}
 }
