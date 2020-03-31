@@ -40,6 +40,30 @@ public class userListe {
 		//double Berechnung = 8.2
 	}
 	
+	public user showRandomUser() {
+		int randomInt = (int)(Math.random()*this.getUserA().length);
+		return this.getUserA()[randomInt];
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

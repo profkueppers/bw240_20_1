@@ -12,6 +12,16 @@ public class appUser {
 		userListe uL1 =  new userListe(userA);
 		
 		System.out.println(uL1.avgPasswordLength());
+		
+		
+		System.out.println(uL1.showRandomUser());
+		System.out.println(uL1.showRandomUser());
+		System.out.println(uL1.showRandomUser());
+		System.out.println(uL1.showRandomUser());
+		System.out.println(uL1.showRandomUser());
+		System.out.println(uL1.showRandomUser());
+		System.out.println(uL1.showRandomUser());
+	
 	}
 
 }

@@ -44,5 +44,9 @@ public class user {
 		return (newPassword.length() >= 8) ? true : false;
 
 	}
+	
+	public String toString() {
+		return this.getUsername() + " " +this.getPassword();
+	}
 
 }
