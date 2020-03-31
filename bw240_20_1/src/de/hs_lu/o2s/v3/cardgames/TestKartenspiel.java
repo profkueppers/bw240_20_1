@@ -26,5 +26,4 @@ public class TestKartenspiel extends TestCase {
 	public void testToString() {
 		System.out.println(myKartenspiel.toString());
 	}
-
 }
