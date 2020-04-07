@@ -1,7 +1,9 @@
 package de.hs_lu.o2s.tut4.exkurs;
 
 public class ueubungsaufgabe {
-
+/**
+ * 
+ */
 	int geburtsjahr;
 	boolean berufstaetig;
 	String vorname, nachname, beruf;
