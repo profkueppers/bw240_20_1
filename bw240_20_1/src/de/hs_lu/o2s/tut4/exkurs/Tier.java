@@ -1,6 +1,6 @@
 package de.hs_lu.o2s.tut4.exkurs;
 
-public class Tier {
+public class Tier{
 
 	private String name;
 	private int gewicht;
@@ -29,6 +29,18 @@ public class Tier {
 	public void setGroesse(double groesse) {
 		this.groesse = groesse;
 	}
+	
+	
+	
+	public double multiplikator() {
+		return this.getGewicht() * this.getGroesse();
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 

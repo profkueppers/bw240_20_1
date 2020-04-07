@@ -11,9 +11,9 @@ public class ueubungsaufgabe {
 	
 	
 	public String toString() {
+		String retString = this.vorname + " " + this.nachname;
 		if (this.geburtsjahr > 1900 && this.berufstaetig == true)
-
-			return this.vorname + " " + this.nachname + "\nBeruf :  " + this.beruf + "\nGeboren im Jahr : "
+			return retString + "\nBeruf :  " + this.beruf + "\nGeboren im Jahr : "
 					+ this.geburtsjahr + "\nAdresse : " + this.adresse;
 
 		if (this.geburtsjahr > 1900 && this.berufstaetig == false)
