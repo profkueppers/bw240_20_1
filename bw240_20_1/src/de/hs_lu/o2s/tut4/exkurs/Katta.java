@@ -30,8 +30,16 @@ public class Katta extends Affe {
 	//rückgabe von Multiplikator * rating
 	
 	public double berechnungBewertung() {
-		double bewertung = 
+		return super.multiplikator() * this.getRating();
 	}
+	
+	
+	@Override
+	public double multiplikator() {
+		// TODO Auto-generated method stub
+		return super.multiplikator();
+	}
+	
 	
 	
 	
