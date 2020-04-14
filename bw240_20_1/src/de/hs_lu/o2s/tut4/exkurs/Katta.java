@@ -32,8 +32,8 @@ public class Katta extends Affe {
 	}
 
 	public Katta() {
-		// TODO Auto-generated constructor stub
-	}
+		super();
+		}
 	
 	
 	//Berechnung der Bewertung = 

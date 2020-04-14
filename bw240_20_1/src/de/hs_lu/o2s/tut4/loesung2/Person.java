@@ -1,4 +1,16 @@
-package de.hs_lu.o2s.tut4.uebung;
+package de.hs_lu.o2s.tut4.loesung2;
+
+/**
+ * toString Person:
+<Person>: <Nachname>, <Vorname>
+
+toString FahrzeugBesitzer:
+<person.toString> hat folgende Fahrzeuge:
+<Rückgabe aller Elemente der fahrzeugListe>
+ * 
+ * @author Patrick
+ *
+ */
 
 public class Person {
 
@@ -29,4 +41,32 @@ public class Person {
 		this.zugeordnete_fahrzeugliste = zugeordnete_fahrzeugliste;
 	}
 
+	/**
+	 * Aufgabenstellung:
+	 * <Person>: <Nachname>, <Vorname>
+	 */
+	@Override
+		public String toString() {
+			return this.getClass().getSimpleName()+": "+this.getNachname()+", "+this.getVorname();
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

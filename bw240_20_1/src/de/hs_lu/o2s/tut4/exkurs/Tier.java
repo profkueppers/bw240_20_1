@@ -1,11 +1,24 @@
 package de.hs_lu.o2s.tut4.exkurs;
 
-public class Tier{
-
-	private String name;
+public abstract class Tier{
+	private static int tieranzahl = 0;
+	
+	String name;
 	private int gewicht;
 	private double groesse;
 
+	
+	public abstract double berechneGehege(); 
+	
+	
+	public static int getTieranzahl() {
+		return Tier.tieranzahl;
+	}
+	
+	public Tier() {
+		tieranzahl++;
+	}
+	
 	public String getName() {
 		return name;
 	}
