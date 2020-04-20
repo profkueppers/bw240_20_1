@@ -7,7 +7,7 @@ public class BankTestApp {
 //		System.out.println("----------- Sparbuch -----------");
 //		System.out.println("--------------------------------");
 //		Sparbuch spar = new Sparbuch("Dagobert Duck", "Entenhausen");
-//		Sparbuch.setZins(2.5);
+//		Sparbuch.setZinssatz(2.5);
 //
 //		System.out.println(spar.toString());
 //		spar.einzahlen(100);
@@ -15,7 +15,7 @@ public class BankTestApp {
 //		System.out.println("Sparbuch-Kontostand: " + spar.getKontostand());
 //		spar.auszahlen(50);
 //		System.out.println("Sparbuch-Kontostand: " + spar.getKontostand());
-//		spar.auszahlen(60); // nicht verfügbar
+//		spar.auszahlen(60); // nicht verfï¿½gbar
 //		System.out.println("Sparbuch-Kontostand: " + spar.getKontostand());
 //
 //		System.out.println("\n--------------------------------");
@@ -50,7 +50,7 @@ public class BankTestApp {
 //		Bausparkonto bauspar = new Bausparkonto("Mickey Mouse", "Entenhausen", 1000);
 //		System.out.println(bauspar.toString());
 //
-//		Bausparkonto.setZins(3.0);
+//		Bausparkonto.setZinssatz(3.0);
 //
 //		bauspar.einzahlen(500);
 //		System.out.println("Bausparkonto-Kontostand: " + bauspar.getKontostand());
