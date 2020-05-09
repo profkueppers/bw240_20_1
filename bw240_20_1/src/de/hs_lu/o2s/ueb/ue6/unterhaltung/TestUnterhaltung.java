@@ -2,7 +2,7 @@ package de.hs_lu.o2s.ueb.ue6.unterhaltung;
 
 import junit.framework.TestCase;
 
-public class TestZuJungExceptions extends TestCase {
+public class TestUnterhaltung extends TestCase {
 
 	public void testZuJungExceptionGeworfenDisco() {
 
