@@ -1,4 +1,4 @@
-package de.hs_lu.o2s.tutorium.exception.uebung;
+package de.hs_lu.o2s.tutorium.tut6.uebung;
 
 public class Autofahrer extends Person {
 
