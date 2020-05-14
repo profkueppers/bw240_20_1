@@ -1,6 +1,7 @@
 package de.hs_lu.o2s.v8.collections;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 
 import de.hs_lu.o2s.v2.cardgames.Spielkarte;
@@ -8,9 +9,10 @@ import de.hs_lu.o2s.v5.personen.Student;
 import de.hs_lu.o2s.v6.unterhaltung.Disco;
 
 public class AppCollAL {
-	
+
 	public static void main(String[] args) {
-		System.out.println("VL8 - Uebung 1: HashSet anlegen");
+	
+		System.out.println("VL8 - Uebung 1: ArrayList anlegen");
 		ArrayList coll = new ArrayList();
 		Spielkarte card1 = new Spielkarte("kreuz", "as");
 		Student stud1 = new Student("Guenter", "654321");
@@ -22,18 +24,18 @@ public class AppCollAL {
 		System.out.println(coll);
 		System.out.println("\n");
 		
-		System.out.println("VL8 - Uebung 2.1: dasselbe Objekt in das Hashset einfügen");
+		System.out.println("VL8 - Uebung 2.1: dasselbe Objekt in die ArrayList einfügen");
 		coll.add(card1);
 		System.out.println(coll);
 		System.out.println("\n");
 		
-		System.out.println("VL8 - Uebung 2.2: eine weitere Karte in das Hashset einfügen, mit selben Farbe und selbem Wert");
+		System.out.println("VL8 - Uebung 2.2: eine weitere Karte in die ArrayList einfügen, mit selben Farbe und selbem Wert");
 		Spielkarte card2 = new Spielkarte("kreuz", "as");
 		coll.add(card2);
 		System.out.println(coll);
 		System.out.println("\n");
 
-		System.out.println("VL8 - Uebung 3: Ein Objekt aus dem Hashset entfernen");
+		System.out.println("VL8 - Uebung 3: Ein Objekt aus der ArrayList entfernen");
 		coll.remove(card1);	
 		System.out.println(coll);
 		System.out.println("\n");
@@ -61,6 +63,8 @@ public class AppCollAL {
 		
 		System.out.println("\n");
 		
-		
+			
+
 	}
+
 }
