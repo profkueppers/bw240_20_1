@@ -11,7 +11,7 @@ public class MyArrayList extends ArrayList {
 	@Override
 	public void add(int index, Object e) {
 		// TODO Auto-generated method stub
-		super.add(index, element);
+		super.add(index, e);
 		/**
 		 * Aufruf priv. Hilfsmethode
 		 * 
