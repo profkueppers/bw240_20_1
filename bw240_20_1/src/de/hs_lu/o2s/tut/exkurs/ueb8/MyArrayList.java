@@ -40,6 +40,7 @@ public class MyArrayList extends ArrayList {
 		for (Object o : this) {
 			printString += "- "+o.toString()+"\n";
 		}
+		
 		System.out.println(printString);
 	}
 
