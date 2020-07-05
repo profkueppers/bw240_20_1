@@ -2,14 +2,14 @@ package de.hs_lu.o2s.tut.exkurs.ueb8;
 
 import java.util.ArrayList;
 
-public class MyArrayList extends ArrayList {
+public class MyArrayList<E> extends ArrayList<E> {
 
 	/**
 	 * Überschreiben der add Methode gemäß Aufg. Stellung
 	 */
 	
 	@Override
-	public void add(int index, Object e) {
+	public void add(int index, E e) {
 		// TODO Auto-generated method stub
 		super.add(index, e);
 		/**
@@ -22,7 +22,7 @@ public class MyArrayList extends ArrayList {
 	}
 
 	@Override
-	public boolean add(Object e) {
+	public boolean add(E e) {
 		// TODO Auto-generated method stub
 		boolean merken = super.add(e);
 		/**
@@ -33,7 +33,7 @@ public class MyArrayList extends ArrayList {
 
 	}
 
-	public void printStatus(Object e, int index) {
+	public void printStatus(E e, int index) {
 		String printString = "Fuege " + e.toString() + " in die Liste an Position " + index + " ein.\n";
 		printString += "Neue Listenlaenge: "+this.size()+"\n";
 		
@@ -45,7 +45,7 @@ public class MyArrayList extends ArrayList {
 	}
 
 	@Override
-	public Object remove(int index) {
+	public E remove(int index) {
 		/**
 		 * Print Status Remove Methode für das Objekt und für den Index
 		 */
@@ -63,9 +63,18 @@ public class MyArrayList extends ArrayList {
 	}
 
 	public void printRemoveStatus(Object o, int index) {
-		System.out.println("Entferne "+o.toString()+" aus Liste an bisheriger Position"+index+".\n" + 
-				"<Position>.");
+		System.out.println("Entferne "+o.toString()+" aus Liste an bisheriger Position "+index+".\n");
 	}
 	
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		super.clear();
+		this.printClearStatus();
+		
+	}
 	
+	public void printClearStatus() {
+		System.out.println("Leere Liste mit Laenge "+this.size());
+	}
 }
