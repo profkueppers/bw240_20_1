@@ -44,4 +44,28 @@ public class MyArrayList extends ArrayList {
 		System.out.println(printString);
 	}
 
+	@Override
+	public Object remove(int index) {
+		/**
+		 * Print Status Remove Methode für das Objekt und für den Index
+		 */
+		this.printRemoveStatus(this.get(index), index);
+		return super.remove(index);
+	}
+	
+	@Override
+	public boolean remove(Object o) {
+		/**
+		 * Print Status Remove Methode für das Objekt und für den Index mithilfe von IndexOf
+		 */
+		this.printRemoveStatus(o, this.indexOf(o));
+		return super.remove(o);
+	}
+
+	public void printRemoveStatus(Object o, int index) {
+		System.out.println("Entferne "+o.toString()+" aus Liste an bisheriger Position"+index+".\n" + 
+				"<Position>.");
+	}
+	
+	
 }
